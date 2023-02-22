@@ -1,0 +1,12 @@
+name: Autologin
+
+on:
+  schedule:
+    - cron: "30 0 * * 5"
+  workflow_dispatch:
+
+jobs:
+  autologin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: esfalsa/autologin-action@main
