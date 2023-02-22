@@ -10,3 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: esfalsa/autologin-action@main
+        with:
+          user_agent: esfalsa
+          credentials: ${{ secrets.AUTOLOGIN_CREDENTIALS }}
