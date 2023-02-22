@@ -2,7 +2,7 @@ name: Sleeper Autologin
 
 on:
   schedule:
-    - cron: "15 2 */6 * *"
+    - cron: "15 */144 * * *"
   workflow_dispatch:
 
 jobs:
